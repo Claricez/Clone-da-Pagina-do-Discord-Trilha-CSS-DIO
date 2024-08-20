@@ -1,52 +1,163 @@
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans";
-    overflow-x: hidden;
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  overflow-x: hidden;
 }
 
-.containerHeader{
-    background-image: url("../../assets/images/HeaderBackground.png");
-    background-size: cover;
+.containerHeader {
+  background-image: url("../../assets/images/HeaderBackground.png");
+  background-size: cover;
+  background-position: center;
 }
 
-.header{
-  padding: 2rem 1.25rem; 
+.header {
+  padding: 2rem 1.25rem;
 }
 
 .titleHeader {
-    font-family: 'Luckiest Guy';
-    color: #fff;
-    letter-spacing: 4px;
+  font-family: "Luckiest Guy";
+  color: #fff;
+  letter-spacing: 4px;
 }
 
-.contentHeader{
-    display: flex;
+.contentHeader {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.containerbuttons {
+  display: flex;
+  flex-direction: column;
+}
+.buttonStyleWhite,
+.buttonStyleBlack {
+  padding: 0.875rem 1rem;
+  margin: 0.5rem 0rem;
+  border-radius: 20px;
+  border: none;
+}
+
+.buttonStyleBlack {
+  background-color: #23272a;
+  color: #fff;
+}
+
+.main,
+.content {
+  margin: 1rem;
+}
+.containerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionLeft {
+  background: #f6f6f6;
+}
+
+.section,
+.sectionLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleSection {
+  font-size: 1.5rem;
+  font-family: "Open Sans", bold;
+}
+.section img,
+.section2 img {
+  max-width: 100%;
+  height: auto;
+}
+.section2 {
+  background: #f6f6f6;
+}
+
+.content {
+  padding-top: 1rem;
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #23272a;
+  text-align: center;
+  padding: 2.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .containerbuttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .buttonStyleBlack,
+  .buttonStyleWhite {
+    margin: 0 1rem;
+  }
+  .contentHeader {
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 10rem;
+  }
+
+  .section,
+  .section2,
+  .sectionLeft {
+    padding: 4rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section2 {
+    text-align: center;
+  }
+
+  .section,
+  .sectionLeft {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img content";
+    justify-items: center;
+  }
+  .containerSection,
+  .containerSectionLeft {
     flex-direction: column;
-    color: #fff;
-    
+  }
+
+  .section img,
+  .containerSectionLeft {
+    grid-area: img;
+  }
+
+  .containerSection {
+    grid-area: content;
+  }
+  .containerSection .titleSection,
+  .containerSection p {
+    margin: 0.5rem;
+  }
+
+  .titleSection {
+    width: 80%;
+  }
 }
 
-.buttonStyleWhite, .buttonStyleBlack{
-    padding: 0.875rem 1rem;
-    margin: 0.5rem 0rem;
-    border-radius: 20px;
-    border: none;
-}
-
-.buttonStyleBlack{
-    background-color: #23272A;
-    color: #fff;
-}
-
-.section1{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-}
-
-.section1 img{
+@media screen and (min-width: 1200px) {
+  .section img {
     max-width: 100%;
-    height: auto;
+    height: fit-content;
+  }
+  .titleSection {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    grid-template-columns: 2fr 1fr;
+  }
 }
