@@ -5,6 +5,7 @@ import sectionImg1 from "../../assets/images/SectionImage.png";
 import sectionImg2 from "../../assets/images/SectionImage2.png";
 import sectionImg3 from "../../assets/images/Section2Img1.png";
 import footerImg from "../../assets/images/discord-logo.png";
+import sectionImgLeft1 from "../../assets/images/SectionLeft1.png"
 
 function Home() {
   return (
@@ -47,6 +48,17 @@ function Home() {
             </p>
           </div>
         </div>
+        <div className={styles.sectionLeft}>
+          <div className={styles.containerSectionLeft}>
+            
+            <h2 className={styles.titleSection}>Aqui é fácil se encontrar</h2>
+            <p>
+            Entre no canal de voz quando estiver à toa. Amigos no mesmo servidor podem te ver e entrar imediatamente, sem nem ter que fazer a chamada.
+
+            </p>
+          </div>
+          <img src={sectionImgLeft1} />
+        </div>
         <div className={styles.section}>
           <img src={sectionImg2} />
           <div className={styles.containerSection}>
@@ -59,31 +71,8 @@ function Home() {
           </div>
         </div>
 
-        <div className={styles.sectionLeft}>
-          <div className={styles.containerSectionLeft}>
-            {" "}
-            <h2 className={styles.titleSection}>Para poucos e para muitos</h2>
-            <p>
-              Organize qualquer comunidade com ferramentas de moderação e acesso
-              personalizado a membros. Dê poderes especiais aos membros, monte
-              canais privados e muito mais.
-            </p>
-          </div>
-          <img src={sectionImg2} />
-        </div>
-        <div className={styles.section}>
-          <img src={sectionImg1} />
-          <div className={styles.containerSection}>
-            <h2 className={styles.titleSection}>
-              Crie um espaço controlado por convite onde você se sinta em casa
-            </h2>
-            <p>
-              Os servidores Discord são organizados em canais com assuntos para
-              vocês colaborarem, compartilharem ou simplesmente falarem do dia
-              sem entupir um chat geral.
-            </p>
-          </div>
-        </div>
+        
+        
         <div className={styles.section2}>
           <div className={styles.content}>
             <div className={styles.container}>
