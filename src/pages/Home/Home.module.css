@@ -11,10 +11,6 @@ body {
   overflow: hidden;
 }
 
-.main, .section, .sectionLeft, .section2 {
-  max-width: 100%;
-  overflow: hidden;
-}
 
 .containerHeader {
   background-image: url("../../assets/images/HeaderBackground.png");
@@ -75,13 +71,22 @@ body {
 
 .titleSection {
   font-size: 1.5rem;
-  font-family: "Open Sans", bold;
+  font-family: "Open Sans";
+  font-weight: 800;
 }
 .section img,
 .section2 img, .sectionLeft img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+} 
+
+.containerSectionLeft{
+  order: 1;
+}
+
+.section2 .content{
+  align-items: center;
 }
 .section2 {
   background: #f6f6f6;
@@ -97,9 +102,20 @@ body {
   display: flex;
 }
 
+.titleSection,
+  .containerSection p, .containerSectionLeft p {
+    margin: 0.5rem 0;
+  }
+
+
 .content {
- 
   margin-bottom: 0;
+}
+
+.section2, .content{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
@@ -121,17 +137,41 @@ body {
   .contentHeader {
     justify-content: center;
     text-align: center;
-    padding: 8rem 10rem;
+    padding: 8rem 8rem;
   }
 
   .section,
   .sectionLeft, .section2 {
    flex-direction: row;
+   
   }
   .section img, .sectionLeft img {
     width: 500px;
     height: auto;
   }
+
+  .containerSectionLeft, .containerSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .titleSection,
+  .containerSection p, .containerSectionLeft p {
+    margin: 0.5rem 0;
+  }
+
+  .section2 img{
+    max-width: 600px;
+  }
+
+.containerSectionLeft{
+  order: 1;
+}
+
+.sectionLeft img{
+  order: 2;
+}
 }
 
 @media screen and (min-width: 1024px) {
@@ -145,20 +185,14 @@ body {
     flex-direction: column;
   }
 
-  .section img,
-  .containerSectionLeft {
-    grid-area: img;
-  }
-
-  .containerSection, .sectionLeft img{
-    grid-area: content;
-  }
-  .containerSection .titleSection,
-  .containerSection p {
-    margin: 0.5rem;
-  }
+  
+  
 .titleSection{
   width: 80%;
+}
+
+.section, .section2, .sectionLeft{
+  padding: 2rem 4rem;
 }
 
 }
@@ -169,10 +203,12 @@ body {
     height: fit-content;
   }
   .titleSection {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
- 
+ .containerSectionLeft .titleSection, .containerSection .titleSection, .containerSection p, .containerSectionLeft p{
+  width: 80%;
+ }
 }

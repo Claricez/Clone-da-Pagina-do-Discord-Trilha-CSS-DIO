@@ -3,7 +3,7 @@ import styles from "./Home.module.css";
 //Images
 import sectionImg1 from "../../assets/images/SectionImage.png";
 import sectionImg2 from "../../assets/images/SectionImage2.png";
-import sectionImg3 from "../../assets/images/Section2Img1.png";
+import sectionImg3 from "../../assets/images/sectionImg3.png";
 import footerImg from "../../assets/images/discord-logo.png";
 import sectionImgLeft1 from "../../assets/images/SectionLeft1.png"
 
