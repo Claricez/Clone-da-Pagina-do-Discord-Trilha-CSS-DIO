@@ -1,70 +1,58 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Clone da Página do Discord
 
-## Available Scripts
+Este projeto foi desenvolvido como parte de um desafio de responsividade proposto pela plataforma DIO (Digital Innovation One). O objetivo foi clonar a página inicial do Discord utilizando React.js, aplicando conceitos de design responsivo para garantir que a interface funcione adequadamente em diferentes dispositivos e tamanhos de tela.
 
-In the project directory, you can run:
+## 📋 Descrição
 
-### `npm start`
+Neste desafio, recriei a interface da página inicial do Discord utilizando React.js e CSS, com foco na implementação de um design responsivo. A ideia principal era reproduzir o layout com fidelidade, mantendo a responsividade e garantindo uma experiência de usuário fluida tanto em dispositivos móveis quanto em desktops.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React.js**
+- **HTML5**
+- **CSS3**
+- **Flexbox**
+- **Media Queries**
 
-### `npm test`
+## 📱 Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Design Responsivo**: A página se adapta a diferentes resoluções de tela, garantindo uma boa experiência tanto em dispositivos móveis quanto em desktops.
+- **Componentização**: Uso de componentes React para estruturar o layout de forma modular.
+- **Layout Fiel**: Esforço para replicar a aparência visual da página original do Discord.
 
-### `npm run build`
+## 🛠️ Desafios Enfrentados
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Implementar um layout complexo utilizando apenas CSS e React.
+- Garantir a responsividade em diferentes tamanhos de tela, ajustando elementos como menus e imagens.
+- Componentização eficiente para reutilização de código.
+E.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🖥️ Como Executar o Projeto
 
-### `npm run eject`
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/clone-discord-page.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd clone-discord-page
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+4. Execute o projeto:
+   ```bash
+   npm start
+   ```
+5. Abra o navegador e acesse:
+   ```
+   http://localhost:3000
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📝 Licença
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Este projeto é para fins educacionais e de prática, e não deve ser utilizado para fins comerciais.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
