@@ -211,4 +211,20 @@ body {
  .containerSectionLeft .titleSection, .containerSection .titleSection, .containerSection p, .containerSectionLeft p{
   width: 80%;
  }
+
+ .contentHeader{
+  padding: 8rem 18.6rem;
+ }
+
+ .section img, .sectionLeft img, .section2 .container {
+  width: 800px;
+ }
+
+ .titleSection{
+  font-size: 2.5rem;
+ }
+
+ .section, .sectionLeft{
+  padding: 2rem 9rem
+ }
 }
